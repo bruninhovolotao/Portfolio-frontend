@@ -1,0 +1,66 @@
+import { Box, Container, Grid, Link, Typography } from "@mui/material";
+import { Projeto } from "../components/ProjetosCards";
+
+const projetos = [
+    {
+      titulo: "Central Park Brazil",
+      descricao: "Vídeo institucional",
+      capaUrl: "https://bruninhovolotao.com.br/wp-content/uploads/2024/09/central-park-brazil.jpg",
+    },
+    {
+      titulo: "AUTO POSTO JARDIM SÃO PAULO",
+      descricao: "Website Institucional",
+      capaUrl: "https://bruninhovolotao.com.br/wp-content/uploads/2022/01/logo-posto-jardim-sao-paulo-1536x1075.webp",
+    },
+    {
+      titulo: "WEBSÉRIE 88",
+      descricao: "Vídeos Institucionais",
+      capaUrl: "https://bruninhovolotao.com.br/wp-content/uploads/2020/10/webserie-88.png",
+    },
+    {
+      titulo: "TRACKER CLUB",
+      descricao: "Logo",
+      capaUrl: "https://bruninhovolotao.com.br/wp-content/uploads/2022/01/logo-tracker.jpg",
+    },
+  ];
+
+export function Home(){
+    return(
+        <>
+        <Box component={"section"} className="section-hero">
+            <Container>
+                <Grid>
+                    <Typography component={"h1"} className="animate__animated animate__fadeInRight">Transformando ideias</Typography>
+                    <Typography component={"h2"} className="animate__animated animate__fadeInRight animate__delay-1s">em realidade visual.</Typography>
+                    <Typography component={"p"} className="animate__animated animate__fadeInRight animate__delay-2s">Front-End Developer | React | JavaScript | TypeScript | HTML | CSS</Typography>
+                    <Link href="#" className="animate__animated animate__fadeIn animate__delay-3s"><button>VEJA MEU PORTFÓLIO</button></Link>
+                </Grid>
+            </Container>
+        </Box>
+
+        <Box component={"section"} className="section-sobre">
+            <Container>
+                <Grid container>
+                    <Grid size={8}>
+                    <Typography component={"h2"} className="animate__animated animate__fadeInLeft animate__delay-1s">Bruninho Volotão</Typography>
+                    <Typography component={"p"} className="animate__animated animate__fadeInLeft animate__delay-2s">
+                        Profissional graduado em Publicidade e Propaganda. Experiência em desenvolvimento de projetos audiovisuais desde 2011, iniciando a carreira como webdesigner e designer gráfico, e a partir de 2014, trabalha como videomaker na filmagem e edição de vídeos e, também, com fotografia.
+                    </Typography>
+                    <Link href="#" className="animate__animated animate__fadeIn animate__delay-3s"><button>MAIS SOBRE MIM</button></Link>
+                    </Grid>
+                </Grid>
+            </Container>
+        </Box>
+
+        <Box component={"section"} className="section-projetos">
+            <Typography component={"h3"}>Portfólio</Typography>
+            <Grid container sx={{position:"relative"}}>    
+                {projetos.map((proj, i) => (
+                    <Projeto key={i} {...proj} />
+                ))}
+            </Grid>
+            <Link href="#" className="animate__animated animate__fadeIn animate__delay-3s"><button>MEU PORTFÓLIO COMPLETO</button></Link>
+        </Box>
+        </>
+    )
+}
