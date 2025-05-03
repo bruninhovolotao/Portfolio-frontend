@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 export function Footer() {
   return (
     <footer>
-      <Link href="#"><img src="/assets\logo-bruninho-volotao-site.webp" alt="Logo Bruninho Volotão" width={230} height={60}/></Link>
+      <Link href="#"><img src="/assets/logo-bruninho-volotao-site.webp" alt="Logo Bruninho Volotão" width={230} height={60}/></Link>
       <Grid container spacing={2}>
         <Grid><Link href="https://www.instagram.com/bruninhovolotao/" target="_blank"><InstagramIcon /></Link></Grid>
         <Grid><Link href="https://www.linkedin.com/in/bruninhovolotao/" target="_blank"><LinkedInIcon /></Link></Grid>
