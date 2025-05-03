@@ -9,10 +9,10 @@
     font-family: "Rubik", sans-serif;
 }
 
-.section-hero{
+.section-hero {
     display: flex;
     height: 100vh;
-    background-image: url(../src/assets/fotografo-esportivo-bruninho-volotao.webp);
+    background-image: url('assets/fotografo-esportivo-bruninho-volotao.webp');
     background-attachment: fixed;
     background-size: cover;
     justify-content: center;
@@ -65,7 +65,7 @@
 
 .section-sobre{
     padding: 60px 0;
-    background-image: url(../src/assets/background-bruninho-volotao.webp);
+    background-image: url('assets/background-bruninho-volotao.webp');
     background-attachment: fixed;
     background-size: cover;
 }
