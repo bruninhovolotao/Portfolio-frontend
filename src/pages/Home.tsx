@@ -1,26 +1,27 @@
 import { Box, Container, Grid, Link, Typography } from "@mui/material";
 import { Projeto } from "../components/ProjetosCards";
+import '../pages/Home.css'
 
 const projetos = [
     {
       titulo: "Central Park Brazil",
       descricao: "Vídeo institucional",
-      capaUrl: "https://bruninhovolotao.com.br/wp-content/uploads/2024/09/central-park-brazil.jpg",
+      capaUrl: "assets/central-park-brazil.webp",
     },
     {
       titulo: "AUTO POSTO JARDIM SÃO PAULO",
       descricao: "Website Institucional",
-      capaUrl: "https://bruninhovolotao.com.br/wp-content/uploads/2022/01/logo-posto-jardim-sao-paulo-1536x1075.webp",
+      capaUrl: "assets/logo-posto-jardim-sao-paulo.webp",
     },
     {
       titulo: "WEBSÉRIE 88",
       descricao: "Vídeos Institucionais",
-      capaUrl: "https://bruninhovolotao.com.br/wp-content/uploads/2020/10/webserie-88.png",
+      capaUrl: "assets/webserie-88.webp",
     },
     {
       titulo: "TRACKER CLUB",
       descricao: "Logo",
-      capaUrl: "https://bruninhovolotao.com.br/wp-content/uploads/2022/01/logo-tracker.jpg",
+      capaUrl: "assets/logo-tracker.webp",
     },
   ];
 
@@ -30,10 +31,10 @@ export function Home(){
         <Box component={"section"} className="section-hero">
             <Container>
                 <Grid>
-                    <Typography component={"h1"} className="animate__animated animate__fadeInRight">Transformando ideias</Typography>
-                    <Typography component={"h2"} className="animate__animated animate__fadeInRight animate__delay-1s">em realidade visual.</Typography>
-                    <Typography component={"p"} className="animate__animated animate__fadeInRight animate__delay-2s">Front-End Developer | React | JavaScript | TypeScript | HTML | CSS</Typography>
-                    <Link href="#" className="animate__animated animate__fadeIn animate__delay-3s"><button>VEJA MEU PORTFÓLIO</button></Link>
+                    <Typography component={"h1"} className="animate__animated animate__fadeInRight animate__faster">Transformando ideias</Typography>
+                    <Typography component={"h2"} className="animate__animated animate__fadeInRight animate__fast">em realidade visual.</Typography>
+                    <Typography component={"p"} className="animate__animated animate__fadeInRight animate__delay">Front-End Developer | React | JavaScript | TypeScript | HTML | CSS</Typography>
+                    <Link href="#projetos" className="animate__animated animate__fadeIn animate__delay-1s"><button>VEJA MEU PORTFÓLIO</button></Link>
                 </Grid>
             </Container>
         </Box>
@@ -52,7 +53,7 @@ export function Home(){
             </Container>
         </Box>
 
-        <Box component={"section"} className="section-projetos">
+        <Box component={"section"} className="section-projetos" id="projetos">
             <Typography component={"h3"}>Portfólio</Typography>
             <Grid container sx={{position:"relative"}}>    
                 {projetos.map((proj, i) => (

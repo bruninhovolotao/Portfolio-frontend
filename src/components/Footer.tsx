@@ -1,3 +1,4 @@
+import '../components/Footer.css'
 import { Grid, Link, Typography } from "@mui/material";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

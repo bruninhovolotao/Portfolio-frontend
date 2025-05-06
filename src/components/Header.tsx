@@ -1,6 +1,7 @@
 import { Box, Button, Link, Toolbar } from "@mui/material";
 import AppBar from '@mui/material/AppBar';
 import { useEffect, useState } from "react";
+import '../components/Header.css'
 
 
 const navItems = ['Home', 'Sobre', 'O que faço', 'Portfólio', 'Blog', 'Contato'];
