@@ -53,7 +53,7 @@ export function Home(){
                         <Typography component={"p"} className="animate__animated animate__fadeInLeft animate__fast">
                             Profissional graduado em Publicidade e Propaganda. Experiência em desenvolvimento de projetos audiovisuais desde 2011, iniciando a carreira como webdesigner e designer gráfico, e a partir de 2014, trabalha como videomaker na filmagem e edição de vídeos e, também, com fotografia.
                         </Typography>
-                        <Link href="#" className="animate__animated animate__fadeIn animate__delay-1s"><button>MAIS SOBRE MIM</button></Link>
+                        <Link href="/sobre" className="animate__animated animate__fadeIn animate__delay-1s"><button>MAIS SOBRE MIM</button></Link>
                     </Grid>
                 </Grid>
             </Container>

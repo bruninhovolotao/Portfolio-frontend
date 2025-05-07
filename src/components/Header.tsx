@@ -14,7 +14,6 @@ import WorkIcon from '@mui/icons-material/Work';
 import ImageIcon from '@mui/icons-material/Image';
 import BookIcon from '@mui/icons-material/Book';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-
 import MenuIcon from '@mui/icons-material/Menu';
 
 export function Header() {

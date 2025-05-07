@@ -1,6 +1,6 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import '../pages/Sobre.css'
+import '../components/Title.css'
 import '../styles/global.css'
 import { Box, Container, Grid, Typography } from "@mui/material";
 
