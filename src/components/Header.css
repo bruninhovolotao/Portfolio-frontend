@@ -1,3 +1,11 @@
 .AppBar button {
     font-family: "Rubik", sans-serif;
 }
+
+.menu-header a button{
+    border-right: 0 !important;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 16px;
+}
+

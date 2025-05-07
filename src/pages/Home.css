@@ -147,3 +147,18 @@
     border: 3px solid #900;
     color: white;
 }
+
+
+/* RESPONSIVE DESIGN  */
+
+@media (max-width: 834px) {
+    .section-sobre-content{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section-sobre h2{
+        text-align: center;
+    }
+}

@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .animate__delay {
     --animate-delay: 0.8s;
 }

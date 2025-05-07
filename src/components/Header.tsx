@@ -1,10 +1,7 @@
-import { Box, Button, Link, Toolbar } from "@mui/material";
+import { Box, Button, ButtonGroup, Link, Toolbar } from "@mui/material";
 import AppBar from '@mui/material/AppBar';
 import { useEffect, useState } from "react";
 import '../components/Header.css'
-
-
-const navItems = ['Home', 'Sobre', 'O que faço', 'Portfólio', 'Blog', 'Contato'];
 
 export function Header() {
 
@@ -32,14 +29,18 @@ export function Header() {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            <Link href="#"><img src="/assets/logo-bruninho-volotao-site.webp" alt="Logo Bruninho Volotão" width={230} height={60}/></Link>
+            <Link href="/"><img src="/assets/logo-bruninho-volotao-site.webp" alt="Logo Bruninho Volotão" width={230} height={60}/></Link>
           </Box>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
-              </Button>
-            ))}
+
+          <Box sx={{display: 'flex', flexDirection: 'column'}} className='menu-header'>
+            <ButtonGroup variant="text" aria-label="Basic button group">
+              <Link href="/"><Button>Home</Button></Link>
+              <Link href="/sobre"><Button>Sobre</Button></Link>
+              <Link href="/o-que-faco"><Button>O que faço</Button></Link>
+              <Link href="/portfolio"><Button>Portfólio</Button></Link>
+              <Link href="/blog"><Button>Blog</Button></Link>
+              <Link href="/contato"><Button>Contato</Button></Link>
+            </ButtonGroup>
           </Box>
         </Toolbar>
       </AppBar>

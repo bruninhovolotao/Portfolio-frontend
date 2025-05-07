@@ -42,12 +42,12 @@ export function Home(){
         <Box component={"section"} className="section-sobre">
             <Container>
                 <Grid container>
-                    <Grid size={8}>
-                    <Typography component={"h2"} className="animate__animated animate__fadeInLeft animate__delay-1s">Bruninho Volotão</Typography>
-                    <Typography component={"p"} className="animate__animated animate__fadeInLeft animate__delay-2s">
-                        Profissional graduado em Publicidade e Propaganda. Experiência em desenvolvimento de projetos audiovisuais desde 2011, iniciando a carreira como webdesigner e designer gráfico, e a partir de 2014, trabalha como videomaker na filmagem e edição de vídeos e, também, com fotografia.
-                    </Typography>
-                    <Link href="#" className="animate__animated animate__fadeIn animate__delay-3s"><button>MAIS SOBRE MIM</button></Link>
+                    <Grid size={{xs: 12, md: 8}} className="section-sobre-content">
+                        <Typography component={"h2"} className="animate__animated animate__fadeInLeft animate__faster">Bruninho Volotão</Typography>
+                        <Typography component={"p"} className="animate__animated animate__fadeInLeft animate__fast">
+                            Profissional graduado em Publicidade e Propaganda. Experiência em desenvolvimento de projetos audiovisuais desde 2011, iniciando a carreira como webdesigner e designer gráfico, e a partir de 2014, trabalha como videomaker na filmagem e edição de vídeos e, também, com fotografia.
+                        </Typography>
+                        <Link href="#" className="animate__animated animate__fadeIn animate__delay-1s"><button>MAIS SOBRE MIM</button></Link>
                     </Grid>
                 </Grid>
             </Container>
