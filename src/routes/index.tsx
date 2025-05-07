@@ -5,7 +5,6 @@ import { OqueFaco } from '../pages/O-que-faco';
 import { Portfolio } from '../pages/Portfolio';
 import { Blog } from '../pages/Blog';
 import { Contato } from '../pages/Contato';
-import { SpeedInsights } from '@vercel/speed-insights/react';
 
 
 export function AppRoutes(){
@@ -13,7 +12,6 @@ export function AppRoutes(){
         
         <BrowserRouter>
             <Routes>
-                <SpeedInsights />
                 <Route path='/' element={<Home/>} />
                 <Route path='/sobre' element={<Sobre/>} />
                 <Route path='/o-que-faco' element={<OqueFaco/>} />

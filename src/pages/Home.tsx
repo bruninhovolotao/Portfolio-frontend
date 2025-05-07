@@ -6,6 +6,7 @@ import '../styles/global.css'
 import 'animate.css';
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const projetos = [
     {
@@ -33,7 +34,6 @@ const projetos = [
 export function Home(){
     return(
         <>
-        
         <Header />
         <Box component={"section"} className="section-hero">
             <Container>
@@ -70,6 +70,7 @@ export function Home(){
             <Link href="#" className="animate__animated animate__fadeIn animate__delay-3s"><button>MEU PORTFÓLIO COMPLETO</button></Link>
         </Box>
         <Footer />
+        <SpeedInsights/>
         </>
     )
 }
