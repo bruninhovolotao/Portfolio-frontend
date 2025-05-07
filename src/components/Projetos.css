@@ -1,0 +1,97 @@
+.section-projetos h3 {
+    color: #333;
+    font-size: 46px;
+    font-weight: 800;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    padding: 30px;
+}
+
+.section-projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.section-projetos a{
+    text-decoration: none;
+    color: white;
+}
+
+.section-projetos-content{
+    position: relative;
+}
+
+.section-projetos img{
+    object-fit: fill;
+}
+
+.section-projetos h4 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 28px 0;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    background: #333;
+    transition: all linear 0.3s;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.888) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.section-projetos h4:hover {
+    transition: all linear 0.3s;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.section-projetos button {
+    color: #333;
+    border: 3px solid #333;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+    padding: 15px 30px;
+    background: transparent;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+.section-projetos button:hover {
+    background-color: #900;
+    border: 3px solid #900;
+    color: white;
+}
+
+/* RESPONSIVE DESIGN  */
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .section-sobre-content {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-sobre h2 {
+        text-align: center;
+    }
+
+    .section-projetos h4 {
+        font-size: 2.5vw;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+    .section-projetos h4 {
+        font-size: 5vw;
+        }
+}
+
+

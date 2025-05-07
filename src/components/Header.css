@@ -9,3 +9,37 @@
     padding: 0 16px;
 }
 
+.menu-mobile-btn{
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .menu-header{
+        display: none !important;
+    }
+    .menu-mobile-btn {
+        display: block;
+    }
+}
+
+.menu-mobile-btn svg{
+    color: #fff;
+    font-size: 30px;
+}
+
+.menu-mobile li{
+    border: 1px solid #ececec;
+}
+
+.menu-mobile svg{
+    font-size: 26px;
+    float: left;
+    color: #333;
+}
+
+.menu-mobile button{
+    color: #333;
+}
+

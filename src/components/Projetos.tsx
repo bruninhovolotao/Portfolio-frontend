@@ -1,4 +1,4 @@
-import { Projeto } from "../components/ProjetosCards";
+import { Projeto } from "./ProjetosCards";
 
 export function Home() {
   const projetos = [

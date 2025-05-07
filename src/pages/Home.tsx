@@ -1,6 +1,11 @@
 import { Box, Container, Grid, Link, Typography } from "@mui/material";
 import { Projeto } from "../components/ProjetosCards";
 import '../pages/Home.css'
+import '../components/Projetos.css'
+import '../styles/global.css'
+import 'animate.css';
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 
 const projetos = [
     {
@@ -28,6 +33,7 @@ const projetos = [
 export function Home(){
     return(
         <>
+        <Header />
         <Box component={"section"} className="section-hero">
             <Container>
                 <Grid>
@@ -62,6 +68,7 @@ export function Home(){
             </Grid>
             <Link href="#" className="animate__animated animate__fadeIn animate__delay-3s"><button>MEU PORTFÓLIO COMPLETO</button></Link>
         </Box>
+        <Footer />
         </>
     )
 }
