@@ -6,6 +6,7 @@ import '../styles/global.css'
 import 'animate.css';
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const projetos = [
     {
@@ -33,6 +34,7 @@ const projetos = [
 export function Home(){
     return(
         <>
+        <SpeedInsights/>
         <Header />
         <Box component={"section"} className="section-hero">
             <Container>
