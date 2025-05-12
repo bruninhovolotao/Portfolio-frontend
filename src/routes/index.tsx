@@ -6,7 +6,6 @@ import { Portfolio } from '../pages/Portfolio';
 import { Blog } from '../pages/Blog';
 import { Contato } from '../pages/Contato';
 
-
 export function AppRoutes(){
     return(
         
@@ -21,4 +20,6 @@ export function AppRoutes(){
             </Routes>
         </BrowserRouter>
     )
+
+    
 }

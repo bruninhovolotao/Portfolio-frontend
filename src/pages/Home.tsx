@@ -6,6 +6,9 @@ import '../styles/global.css'
 import 'animate.css';
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 const projetos = [
@@ -32,6 +35,15 @@ const projetos = [
   ];
 
 export function Home(){
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800, // duração da animação
+            once: true, // anima apenas uma vez
+            easing: 'ease-out-cubic',
+        });
+    }, []);
+
     return(
         <>
         <Header />
@@ -50,19 +62,19 @@ export function Home(){
             <Container>
                 <Grid container>
                     <Grid size={{xs: 12, md: 8}} className="section-sobre-content">
-                        <Typography component={"h2"} className="animate__animated animate__fadeInLeft animate__faster">Bruninho Volotão</Typography>
-                        <Typography component={"p"} className="animate__animated animate__fadeInLeft animate__fast">
+                        <Typography component={"h2"} data-aos="fade-right">Bruninho Volotão</Typography>
+                        <Typography component={"p"} data-aos="fade-right">
                             Profissional graduado em Publicidade e Propaganda. Experiência em desenvolvimento de projetos audiovisuais desde 2011, iniciando a carreira como webdesigner e designer gráfico, e a partir de 2014, trabalha como videomaker na filmagem e edição de vídeos e, também, com fotografia.
                         </Typography>
-                        <Link href="/sobre" className="animate__animated animate__fadeIn animate__delay-1s"><button>MAIS SOBRE MIM</button></Link>
+                        <Link href="/sobre" data-aos="fade-up"><button>MAIS SOBRE MIM</button></Link>
                     </Grid>
                 </Grid>
             </Container>
         </Box>
 
         <Box component={"section"} className="section-projetos" id="projetos">
-            <Typography component={"h3"}>Portfólio</Typography>
-            <Grid container sx={{position:"relative"}}>    
+            <Typography component={"h3"} data-aos="fade-up">Portfólio</Typography>
+            <Grid container sx={{position:"relative"}} data-aos="fade-up">    
                 {projetos.map((proj, i) => (
                     <Projeto key={i} {...proj} />
                 ))}

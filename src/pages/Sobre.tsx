@@ -1,7 +1,7 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import '../components/Title.css'
-import '../styles/global.css'
+import '../components/Title.css';
+import '../styles/global.css';
 import { Box, Container, Grid, Typography } from "@mui/material";
 
 export function Sobre(){
@@ -9,7 +9,7 @@ export function Sobre(){
         <>
         <Header/>
 
-            <Box sx={{mb:8}} className='animate__animated animate__fadeIn page-title'>
+            <Box sx={{mb:8}} className='page-title'>
                 <Typography component={"h1"}>SOBRE</Typography>
             </Box>
             <Container sx={{mb:8}} className='animate__animated animate__fadeInUp page-content'>
