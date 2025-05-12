@@ -1,0 +1,37 @@
+.login{
+    background-color: #ccc;
+    
+}
+
+.login-content{
+    margin: 0 45vh;
+    padding: 30px;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form{
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-content h1{
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.login-content img{
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.login-content button{
+    background-color: #900;
+    padding: 10px;
+}

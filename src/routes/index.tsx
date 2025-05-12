@@ -5,6 +5,7 @@ import { OqueFaco } from '../pages/O-que-faco';
 import { Portfolio } from '../pages/Portfolio';
 import { Blog } from '../pages/Blog';
 import { Contato } from '../pages/Contato';
+import { Login } from '../pages/login';
 
 export function AppRoutes(){
     return(
@@ -17,6 +18,7 @@ export function AppRoutes(){
                 <Route path='/portfolio' element={<Portfolio/>} />
                 <Route path='/Blog' element={<Blog/>} />
                 <Route path='/contato' element={<Contato/>} />
+                <Route path='/login' element={<Login/>} />
             </Routes>
         </BrowserRouter>
     )
