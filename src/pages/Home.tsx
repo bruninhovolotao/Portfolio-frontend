@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Link, Typography } from "@mui/material";
+import { Box, Container, Grid, Link, Tooltip, Typography } from "@mui/material";
 import { Projeto } from "../components/ProjetosCards";
 import '../pages/Home.css'
 import '../components/Projetos.css'
@@ -9,7 +9,9 @@ import { Footer } from "../components/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-
+import { FaHtml5, FaCss3, FaReact, FaGitAlt, FaGithub, FaWordpress, FaNodeJs, FaFigma  } from "react-icons/fa";
+import { SiJavascript, SiTypescript, SiMysql, SiAxios, SiAdobephotoshop, SiAdobepremierepro, SiExpress } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const projetos = [
     {
@@ -67,6 +69,25 @@ export function Home(){
                             Profissional graduado em Publicidade e Propaganda. Experiência em desenvolvimento de projetos audiovisuais desde 2011, iniciando a carreira como webdesigner e designer gráfico, e a partir de 2014, trabalha como videomaker na filmagem e edição de vídeos e, também, com fotografia.
                         </Typography>
                         <Link href="/sobre" data-aos="fade-up"><button>MAIS SOBRE MIM</button></Link>
+                    </Grid>
+                    <Grid container spacing={2} size={{xs: 12, md: 4}} data-aos="fade-left" className="section-sobre-grid">
+                        
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="HMTL"><FaHtml5/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="CSS"><FaCss3/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="JAVASCRIPT"><SiJavascript/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="TYPESCRIPT"><SiTypescript/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="GIT"><FaGitAlt/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="GITHUB"><FaGithub/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="NODE JS"><FaNodeJs/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="REACT"><FaReact/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="EXPRESS"><SiExpress/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="POSTGRESQL"><BiLogoPostgresql/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="MYSQL"><SiMysql/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="WORDPRESS"><FaWordpress/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="FIGMA"><FaFigma/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="AXIOS"><SiAxios/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="PHOTOSHOP"><SiAdobephotoshop/></Tooltip></Grid>
+                        <Grid size={3} className="section-sobre-icon"><Tooltip title="PREMIERE"><SiAdobepremierepro/></Tooltip></Grid>
                     </Grid>
                 </Grid>
             </Container>
