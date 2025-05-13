@@ -6,6 +6,9 @@ import { Portfolio } from '../pages/Portfolio';
 import { Blog } from '../pages/Blog';
 import { Contato } from '../pages/Contato';
 import { Login } from '../pages/login';
+import { Painel } from '../pages/Painel';
+import { BlogPainel } from '../painel/BlogPainel';
+import { PortfolioPainel } from '../painel/PortfolioPainel';
 
 export function AppRoutes(){
     return(
@@ -19,6 +22,9 @@ export function AppRoutes(){
                 <Route path='/Blog' element={<Blog/>} />
                 <Route path='/contato' element={<Contato/>} />
                 <Route path='/login' element={<Login/>} />
+                <Route path='/painel' element={<Painel />} />
+                <Route path='/painel/blog' element={<BlogPainel />} />
+                <Route path='/painel/portfolio' element={<PortfolioPainel />} />
             </Routes>
         </BrowserRouter>
     )

@@ -3,7 +3,7 @@
     
 }
 
-.login-content{
+/* .login-content{
     margin: 0 45vh;
     padding: 30px;
     display: flex !important;
@@ -24,11 +24,11 @@
     font-size: 26px;
     font-weight: 400;
     text-align: center;
-}
+} */
 
 .login-content img{
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
 }
 
 .login-content button{
