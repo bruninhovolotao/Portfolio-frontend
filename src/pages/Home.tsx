@@ -52,22 +52,22 @@ export function Home(){
                         <Link href="/sobre" className="animate__animated animate__fadeIn animate__delay-1s"><button>MAIS SOBRE MIM</button></Link>
                     </Grid>
                         <Grid container spacing={2} size={{xs: 12, md: 4}} data-aos="fade-left" className="section-sobre-grid">
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="HMTL"><FaHtml5/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="CSS"><FaCss3/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="JAVASCRIPT"><SiJavascript/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="TYPESCRIPT"><SiTypescript/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="GIT"><FaGitAlt/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="GITHUB"><FaGithub/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="NODE JS"><FaNodeJs/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="REACT"><FaReact/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="EXPRESS"><SiExpress/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="POSTGRESQL"><BiLogoPostgresql/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="MYSQL"><SiMysql/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="WORDPRESS"><FaWordpress/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="FIGMA"><FaFigma/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="AXIOS"><SiAxios/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="PHOTOSHOP"><SiAdobephotoshop/></Tooltip></Grid>
-                        <Grid size={3} className="section-sobre-icon"><Tooltip title="PREMIERE"><SiAdobepremierepro/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="HMTL"><FaHtml5/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="CSS"><FaCss3/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="JAVASCRIPT"><SiJavascript/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="TYPESCRIPT"><SiTypescript/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="GIT"><FaGitAlt/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="GITHUB"><FaGithub/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="NODE JS"><FaNodeJs/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="REACT"><FaReact/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="EXPRESS"><SiExpress/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="POSTGRESQL"><BiLogoPostgresql/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="MYSQL"><SiMysql/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="WORDPRESS"><FaWordpress/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="FIGMA"><FaFigma/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="AXIOS"><SiAxios/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="PHOTOSHOP"><SiAdobephotoshop/></Tooltip></Grid>
+                        <Grid size={{xs: 2, md:3}} className="section-sobre-icon"><Tooltip title="PREMIERE"><SiAdobepremierepro/></Tooltip></Grid>
                     </Grid>
                 </Grid>
             </Container>
