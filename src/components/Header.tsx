@@ -139,7 +139,7 @@ export function Header() {
           <Box className='menu-mobile-btn'>
             {(['right'] as const).map((anchor) => (
               <React.Fragment key={anchor}>
-                <Button onClick={toggleDrawer(anchor, true)}><MenuIcon/></Button>
+                <Button aria-label="Mobile Menu" onClick={toggleDrawer(anchor, true)}><MenuIcon/></Button>
                 <Drawer
                   anchor={anchor}
                   open={state[anchor]}

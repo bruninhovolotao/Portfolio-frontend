@@ -45,7 +45,7 @@ export function PortfolioCard(){
                 {projetos.map((projeto) => (
                     <Grid key={projeto.id} size={{xs: 12, md: 3, sm: 6}}>
                         <Box className='section-projetos-content'>
-                        <LinkRouter to={`/projetos/${projeto.slug}`}><img srcSet={projeto.thumbnail} src={projeto.thumbnail} alt={projeto.titulo} loading="lazy" width={`100%`} height={`100%`} />
+                        <LinkRouter to={`/projetos/${projeto.slug}`}><img srcSet={projeto.thumbnail} src={projeto.thumbnail} alt={projeto.descricao} loading="lazy" width={`100%`} height={`100%`} />
                         <Typography component={"h4"}>{projeto.titulo}</Typography></LinkRouter>
                         </Box>
                     </Grid>
