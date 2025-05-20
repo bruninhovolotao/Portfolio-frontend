@@ -9,7 +9,7 @@ export function OqueFaco(){
         <>
         <Header/>
 
-            <Box sx={{mb:8}} className='animate__animated animate__fadeIn page-title'>
+            <Box sx={{mb:8}} className='page-title'>
                 <Typography component={"h1"}>O QUE FAÇO</Typography>
             </Box>
             <Container sx={{mb:8}} className='animate__animated animate__fadeInUp page-content'>

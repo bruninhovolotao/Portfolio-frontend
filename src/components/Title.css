@@ -11,7 +11,61 @@
     text-transform: uppercase;
 }
 
-.page-content{
-    font-size: 18px;
-    line-height: 2em;
+.page-title-portfolio{
+    height: 5em;
+    padding: 6em 0 4em 0;
+    color: #fff;
+    background-attachment: fixed !important;
+    background-position-y: -35em !important;
+    background: #1e1e1e;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-bottom: 3em;
+}
+
+.page-title-portfolio::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-Color: #00000095;
+    z-Index: -1;
+}
+
+.page-title-portfolio h1 {
+    font-size: 3.5vw;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 835px) {
+    .page-title h1 {
+        font-size: 3em;
+    }
+
+    .page-title-portfolio h1 {
+    font-size: 3em;
+    }
+}
+
+@media (max-width: 500px) {
+    .page-title h1 {
+        font-size: 1.5em;
+    }
+
+    .page-title-portfolio {
+        background-position-y: -10em !important;
+    }
+
+    .page-title-portfolio h1 {
+    font-size: 1.5em;
+    }
 }

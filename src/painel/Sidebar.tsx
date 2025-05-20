@@ -1,4 +1,4 @@
-import { Box, Grid, Link } from "@mui/material";
+import { Box } from "@mui/material";
 import '../painel/Sidebar.css'
 import { Logo } from "../components/Logo";
 import List from '@mui/material/List';
@@ -9,52 +9,50 @@ import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import WorkIcon from '@mui/icons-material/Work';
 import ArticleIcon from '@mui/icons-material/Article';
+import { Link as LinkRouter } from "react-router-dom"
 
 export function SidebarPainel(){
     return(
         <>
-        <Grid container>
-            <Grid size={2} component={"aside"}>
-                <Box className="painel-sidebar">
-            <Logo/>
+        
+        <Box className="painel-sidebar">
+            <LinkRouter to="/"><Logo/></LinkRouter>
 
             <List>
             <ListItem disablePadding>
-                <Link href="/painel">
+                <LinkRouter to={"/painel"}>
                     <ListItemButton className="button">
                     <ListItemIcon className="icon">
                         <HomeIcon />
                     </ListItemIcon>
                     <ListItemText primary="Home" />
                 </ListItemButton>
-                </Link>
+                </LinkRouter>
             </ListItem>
 
             <ListItem disablePadding>
-                <Link href="/painel/portfolio">
+                <LinkRouter to="/painel/portfolio">
                     <ListItemButton className="button">
                     <ListItemIcon className="icon">
                         <WorkIcon />
                     </ListItemIcon>
                     <ListItemText primary="Portfolio" />
                 </ListItemButton>
-                </Link>
+                </LinkRouter>
             </ListItem>
 
             <ListItem disablePadding>
-                <Link href="/painel/blog">
+                <LinkRouter to="/painel/blog">
                     <ListItemButton className="button">
                         <ListItemIcon className="icon">
                             <ArticleIcon />
                         </ListItemIcon>
                         <ListItemText primary="Blog" />
                     </ListItemButton>
-                </Link>
+                </LinkRouter>
                 </ListItem>
             </List>
-                </Box>
-            </Grid>
-        </Grid>
+        </Box>
         </>
     )
 }

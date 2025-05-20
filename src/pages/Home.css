@@ -120,3 +120,72 @@
 
 
 
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 835px) {
+    .section-hero{
+        height: 40vh;
+        background-size: contain;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    .section-hero::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-Color: #00000095;
+        z-Index: -1;
+    }
+    .section-hero h1{
+        text-align: center;
+    }
+    .section-hero h2{
+        text-align: center;
+    }
+    .section-hero p{
+        text-align: center;
+    }
+    .section-hero a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .section-sobre-grid{
+        padding: 3em 12em;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-hero {
+        height: 50vh;
+        background: #000
+    }
+    .section-hero h1 {
+        font-size: 1.8em;
+    }
+    .section-hero h2 {
+        font-size: 1.5em;
+    }
+    .section-hero p {
+        font-size: 0.6em;
+    }
+
+    .section-sobre{
+        padding: 2em 0;
+    }
+    .section-sobre-content h2{
+        font-size: 2em;
+    }
+    .section-sobre-content p{
+        padding: 0;
+    }
+
+    .section-sobre-grid {
+        padding: 3em 0em
+    }
+}
+

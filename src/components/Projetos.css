@@ -24,7 +24,40 @@
 }
 
 .section-projetos img{
-    object-fit: fill;
+    
+}
+
+.section-projetos {
+    
+    background-color: #f9f9f9;
+}
+
+.section-projetos-content {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #fff;
+}
+
+.section-projetos-content img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    object-fit: cover;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.section-projetos-content img:hover {
+    transform: scale(1.2);
+}
+
+.section-projetos-content h4 {
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
 }
 
 .section-projetos h4 {

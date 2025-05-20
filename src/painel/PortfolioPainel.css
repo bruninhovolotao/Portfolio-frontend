@@ -1,0 +1,68 @@
+.painel-content-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.painel-content-title button{
+    height: 40px;
+}
+
+.painel-content h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.painel-content thead{
+    background-color: #FBFBFB;
+}
+
+.painel-content th{
+    font-size: 20px;
+    
+}
+
+.painel-content img{
+    width: 3.5em;
+    border-radius: 0.5em;
+}
+
+.painel-content .thumbnail{
+    width: 2em;
+}
+
+.painel-content a{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #6F6F6F;
+    transition: all linear 0.3s;
+}
+
+.painel-content a:hover{
+    color: #900;
+}
+
+.modal-content .button-close {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    min-width: 40px;
+}
+
+.modal-content h2{
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.ce-block__content{
+    max-width: none;
+    width: 89%;
+}
+
+.ce-toolbar__content {
+    max-width: none;
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+}

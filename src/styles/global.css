@@ -19,3 +19,24 @@ html {
 .animate__delay-1s {
     --animate-delay: 1.0s;
 }
+
+.page-content {
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.page-content ul{
+    margin: 1em 2em;
+}
+
+.page-content img{
+    width: 71.98em !important;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 835px) {
+    .page-content img {
+        width: 100% !important;
+    }
+}

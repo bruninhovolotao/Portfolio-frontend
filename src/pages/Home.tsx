@@ -1,5 +1,4 @@
 import { Box, Container, Grid, Link, Tooltip, Typography } from "@mui/material";
-import { Projeto } from "../components/ProjetosCards";
 import '../pages/Home.css'
 import '../components/Projetos.css'
 import '../styles/global.css'
@@ -12,29 +11,9 @@ import { useEffect } from 'react';
 import { FaHtml5, FaCss3, FaReact, FaGitAlt, FaGithub, FaWordpress, FaNodeJs, FaFigma  } from "react-icons/fa";
 import { SiJavascript, SiTypescript, SiMysql, SiAxios, SiAdobephotoshop, SiAdobepremierepro, SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { PortfolioCard } from "../components/PortfolioCard";
 
-const projetos = [
-    {
-      titulo: "Central Park Brazil",
-      descricao: "Vídeo institucional",
-      capaUrl: "assets/central-park-brazil.webp",
-    },
-    {
-      titulo: "AUTO POSTO JARDIM SÃO PAULO",
-      descricao: "Website Institucional",
-      capaUrl: "assets/logo-posto-jardim-sao-paulo.webp",
-    },
-    {
-      titulo: "WEBSÉRIE 88",
-      descricao: "Vídeos Institucionais",
-      capaUrl: "assets/webserie-88.webp",
-    },
-    {
-      titulo: "TRACKER CLUB",
-      descricao: "Logo",
-      capaUrl: "assets/logo-tracker.webp",
-    },
-  ];
+
 
 export function Home(){
 
@@ -45,6 +24,8 @@ export function Home(){
             easing: 'ease-out-cubic',
         });
     }, []);
+
+  
 
     return(
         <>
@@ -68,10 +49,9 @@ export function Home(){
                         <Typography component={"p"} data-aos="fade-right">
                             Profissional graduado em Publicidade e Propaganda. Experiência em desenvolvimento de projetos audiovisuais desde 2011, iniciando a carreira como webdesigner e designer gráfico, e a partir de 2014, trabalha como videomaker na filmagem e edição de vídeos e, também, com fotografia.
                         </Typography>
-                        <Link href="/sobre" data-aos="fade-up"><button>MAIS SOBRE MIM</button></Link>
+                        <Link href="/sobre" className="animate__animated animate__fadeIn animate__delay-1s"><button>MAIS SOBRE MIM</button></Link>
                     </Grid>
-                    <Grid container spacing={2} size={{xs: 12, md: 4}} data-aos="fade-left" className="section-sobre-grid">
-                        
+                        <Grid container spacing={2} size={{xs: 12, md: 4}} data-aos="fade-left" className="section-sobre-grid">
                         <Grid size={3} className="section-sobre-icon"><Tooltip title="HMTL"><FaHtml5/></Tooltip></Grid>
                         <Grid size={3} className="section-sobre-icon"><Tooltip title="CSS"><FaCss3/></Tooltip></Grid>
                         <Grid size={3} className="section-sobre-icon"><Tooltip title="JAVASCRIPT"><SiJavascript/></Tooltip></Grid>
@@ -93,15 +73,8 @@ export function Home(){
             </Container>
         </Box>
 
-        <Box component={"section"} className="section-projetos" id="projetos">
-            <Typography component={"h3"} data-aos="fade-up">Portfólio</Typography>
-            <Grid container sx={{position:"relative"}} data-aos="fade-up">    
-                {projetos.map((proj, i) => (
-                    <Projeto key={i} {...proj} />
-                ))}
-            </Grid>
-            <Link href="#" className="animate__animated animate__fadeIn animate__delay-3s"><button>MEU PORTFÓLIO COMPLETO</button></Link>
-        </Box>
+        <PortfolioCard/>
+        
         <Footer />
         </>
     )

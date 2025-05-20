@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup, Link, Toolbar } from "@mui/material";
+import { Box, Button, ButtonGroup, Toolbar } from "@mui/material";
 import AppBar from '@mui/material/AppBar';
 import { useEffect, useState } from "react";
 import '../components/Header.css'
@@ -15,6 +15,7 @@ import ImageIcon from '@mui/icons-material/Image';
 import BookIcon from '@mui/icons-material/Book';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link as LinkRouter } from "react-router-dom"
 
 export function Header() {
 
@@ -63,42 +64,42 @@ export function Header() {
         <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <Link href="/"><HomeIcon/><Button>Home</Button></Link>
+                <LinkRouter to="/"><HomeIcon/><Button>Home</Button></LinkRouter>
               </ListItemIcon>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <Link href="/sobre"><PersonIcon/><Button>Sobre</Button></Link>
+                <LinkRouter to="/sobre"><PersonIcon/><Button>Sobre</Button></LinkRouter>
               </ListItemIcon>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <Link href="/"><WorkIcon/><Button>o que faço</Button></Link>
+                <LinkRouter to="/o-que-faco"><WorkIcon/><Button>o que faço</Button></LinkRouter>
               </ListItemIcon>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <Link href="/"><ImageIcon/><Button>Portfólio</Button></Link>
+                <LinkRouter to="/portfolio"><ImageIcon/><Button>Portfólio</Button></LinkRouter>
               </ListItemIcon>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <Link href="/"><BookIcon/><Button>Blog</Button></Link>
+                <LinkRouter to="/blog"><BookIcon/><Button>Blog</Button></LinkRouter>
               </ListItemIcon>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <Link href="/"><WhatsAppIcon/><Button>Contato</Button></Link>
+                <LinkRouter to="/contato"><WhatsAppIcon/><Button>Contato</Button></LinkRouter>
               </ListItemIcon>
             </ListItemButton>
           </ListItem>
@@ -121,17 +122,17 @@ export function Header() {
             component="div"
             sx={{ flexGrow: 1, display: { sm: 'block' } }}
           >
-            <Link href="/"><img src="/assets/logo-bruninho-volotao-site.webp" alt="Logo Bruninho Volotão" width={230} height={60}/></Link>
+            <LinkRouter to="/"><img src="/assets/logo-bruninho-volotao-site.webp" alt="Logo Bruninho Volotão" width={230} height={60}/></LinkRouter>
           </Box>
 
           <Box sx={{display: 'flex', flexDirection: 'column'}} className='menu-header'>
             <ButtonGroup variant="text" aria-label="Basic button group">
-              <Link href="/"><Button>Home</Button></Link>
-              <Link href="/sobre"><Button>Sobre</Button></Link>
-              <Link href="/o-que-faco"><Button>O que faço</Button></Link>
-              <Link href="/portfolio"><Button>Portfólio</Button></Link>
-              <Link href="/blog"><Button>Blog</Button></Link>
-              <Link href="/contato"><Button>Contato</Button></Link>
+              <LinkRouter to="/"><Button>Home</Button></LinkRouter>
+              <LinkRouter to="/sobre"><Button>Sobre</Button></LinkRouter>
+              <LinkRouter to="/o-que-faco"><Button>O que faço</Button></LinkRouter>
+              <LinkRouter to="/portfolio"><Button>Portfólio</Button></LinkRouter>
+              <LinkRouter to="/blog"><Button>Blog</Button></LinkRouter>
+              <LinkRouter to="/contato"><Button>Contato</Button></LinkRouter>
             </ButtonGroup>
           </Box>
 

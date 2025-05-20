@@ -3,5 +3,11 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    // ... other options
+    "module": "esnext", // or commonjs if your setup requires it and handles ESM interop
+    "moduleResolution": "bundler",
+    // ... other options
+  },
 }
