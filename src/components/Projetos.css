@@ -52,22 +52,14 @@
     transform: scale(1.2);
 }
 
-.section-projetos-content h4 {
-    padding: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-align: center;
-    color: #fff;
-}
-
 .section-projetos h4 {
     position: absolute;
     width: 100%;
     bottom: 0;
     padding: 28px 0;
-    font-size: 1.2vw;
+    font-size: 1vw;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 400;
     text-align: center;
     background: #333;
     transition: all linear 0.3s;
