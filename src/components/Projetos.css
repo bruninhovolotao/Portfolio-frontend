@@ -1,3 +1,12 @@
+.section-projetos-home h3 {
+    color: #333;
+    font-size: 46px;
+    font-weight: 800;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    padding: 30px;
+}
+
 .section-projetos h3 {
     color: #333;
     font-size: 46px;
@@ -14,22 +23,21 @@
     padding-bottom: 40px;
 }
 
-.section-projetos a{
+.section-projetos-home a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-projetos a {
     text-decoration: none;
     color: white;
 }
 
 .section-projetos-content{
     position: relative;
-}
-
-.section-projetos img{
-    
-}
-
-.section-projetos {
-    
-    background-color: #f9f9f9;
 }
 
 .section-projetos-content {
@@ -71,17 +79,36 @@
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+.section-projetos-home button {
+    color: #333;
+    border: 3px solid #333;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background: transparent;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    margin-bottom: 2em
+
+}
+
 .section-projetos button {
     color: #333;
     border: 3px solid #333;
     border-radius: 30px;
     font-size: 18px;
     font-weight: 600;
-    margin-top: 40px;
     padding: 15px 30px;
     background: transparent;
     transition: all linear 0.3s;
     cursor: pointer;
+}
+
+.section-projetos-home button:hover {
+    background-color: #900;
+    border: 3px solid #900;
+    color: white;
 }
 
 .section-projetos button:hover {
