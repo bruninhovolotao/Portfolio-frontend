@@ -4,7 +4,9 @@ import '../components/Title.css'
 import '../styles/global.css'
 import { Box, Container, Grid, Typography } from "@mui/material";
 
+
 export function Blog(){
+
     return(
         <>
         <Header/>
@@ -24,4 +26,5 @@ export function Blog(){
         </>
     )
 }
+
 

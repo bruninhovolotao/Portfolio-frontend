@@ -1,1 +1,1 @@
-export const BACKEND_URL = "https://backend-growtwitter.onrender.com";
+export const BACKEND_URL = "https://portfolio-backend-v9dp.onrender.com";
