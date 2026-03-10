@@ -30,12 +30,35 @@ export function Home(){
     return(
         <>
         <Header />
-        <Box component={"section"} className="section-hero">
+        {/* <Box component={"section"} className="section-hero">
             <Container>
                 <Grid>
                     <Typography component={"h1"} className="animate__animated animate__fadeInRight animate__faster">Transformando ideias</Typography>
                     <Typography component={"h2"} className="animate__animated animate__fadeInRight animate__fast">em realidade visual.</Typography>
                     <Typography component={"p"} className="animate__animated animate__fadeInRight animate__delay">Front-End Developer | React | JavaScript | TypeScript | HTML | CSS</Typography>
+                    <Link href="#projetos" className="animate__animated animate__fadeIn animate__delay-1s"><button>VEJA MEU PORTFÓLIO</button></Link>
+                </Grid>
+            </Container>
+        </Box> */}
+
+        <Box component={"section"} className="section-hero">
+            <video
+                className="hero-video"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="none"
+                poster="/videos/hero-section-bruninho-volotao.webp"
+            >
+                <source src="/videos/hero-section-bruninho-volotao.webm" type="video/webm" />
+                <source src="/videos/hero-section-bruninho-volotao.mp4" type="video/mp4" />
+            </video>
+            <Container>
+                <Grid>
+                    <Typography component={"h1"} className="animate__animated animate__fadeInLeft animate__faster">Transformando ideias</Typography>
+                    <Typography component={"h2"} className="animate__animated animate__fadeInLeft animate__fast">em realidade visual.</Typography>
+                    <Typography component={"p"} className="animate__animated animate__fadeInLeft animate__delay">Full Stack Developer | React • Node.js • TypeScript • Prisma • PostgreSQL</Typography>
                     <Link href="#projetos" className="animate__animated animate__fadeIn animate__delay-1s"><button>VEJA MEU PORTFÓLIO</button></Link>
                 </Grid>
             </Container>
