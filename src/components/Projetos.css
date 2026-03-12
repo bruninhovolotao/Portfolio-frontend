@@ -1,5 +1,5 @@
 .section-projetos-home h3 {
-    color: #333;
+    color: white;
     font-size: 46px;
     font-weight: 800;
     text-align: center;
@@ -80,8 +80,8 @@
 }
 
 .section-projetos-home button {
-    color: #333;
-    border: 3px solid #333;
+    color: white;
+    border: 3px solid white;
     border-radius: 30px;
     font-size: 18px;
     font-weight: 600;

@@ -70,7 +70,9 @@ export function Home(){
                     <Grid size={{xs: 12, md: 8}} className="section-sobre-content">
                         <Typography component={"h2"} data-aos="fade-right">Bruninho Volotão</Typography>
                         <Typography component={"p"} data-aos="fade-right">
-                            Profissional graduado em Publicidade e Propaganda. Experiência em desenvolvimento de projetos audiovisuais desde 2011, iniciando a carreira como webdesigner e designer gráfico, e a partir de 2014, trabalha como videomaker na filmagem e edição de vídeos e, também, com fotografia.
+                            Sou Desenvolvedor Full Stack especializado na construção de aplicações web escaláveis, sistemas SaaS e soluções orientadas a performance. Atuo com foco em experiência do usuário, arquitetura moderna e desenvolvimento de ponta a ponta; do design da interface à estruturação do backend e banco de dados.
+                            <br/><br/>
+                            Tenho experiência no desenvolvimento de aplicações completas utilizando React, Node.js, TypeScript, PostgreSQL e Prisma, criando sistemas robustos com autenticação segura, APIs REST, gerenciamento de estado e interfaces modernas. Também trabalho com arquitetura de aplicações, modelagem de dados e otimização de performance.
                         </Typography>
                         <Link href="/sobre" className="animate__animated animate__fadeIn animate__delay-1s"><button>MAIS SOBRE MIM</button></Link>
                     </Grid>

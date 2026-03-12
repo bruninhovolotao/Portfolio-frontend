@@ -75,13 +75,13 @@ export function Header() {
               </ListItemIcon>
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
+          {/* <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <LinkRouter to="/o-que-faco"><WorkIcon/><Button>o que faço</Button></LinkRouter>
               </ListItemIcon>
             </ListItemButton>
-          </ListItem>
+          </ListItem> */}
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -89,7 +89,7 @@ export function Header() {
               </ListItemIcon>
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
+          {/* <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
                 <LinkRouter to="/blog"><BookIcon/><Button>Blog</Button></LinkRouter>
@@ -102,7 +102,7 @@ export function Header() {
                 <LinkRouter to="/contato"><WhatsAppIcon/><Button>Contato</Button></LinkRouter>
               </ListItemIcon>
             </ListItemButton>
-          </ListItem>
+          </ListItem> */}
         
       </List>
       
@@ -129,10 +129,10 @@ export function Header() {
             <ButtonGroup variant="text" aria-label="Basic button group">
               <LinkRouter to="/"><Button>Home</Button></LinkRouter>
               <LinkRouter to="/sobre"><Button>Sobre</Button></LinkRouter>
-              <LinkRouter to="/o-que-faco"><Button>O que faço</Button></LinkRouter>
+              {/* <LinkRouter to="/o-que-faco"><Button>O que faço</Button></LinkRouter> */}
               <LinkRouter to="/portfolio"><Button>Portfólio</Button></LinkRouter>
-              <LinkRouter to="/blog"><Button>Blog</Button></LinkRouter>
-              <LinkRouter to="/contato"><Button>Contato</Button></LinkRouter>
+              {/* <LinkRouter to="/blog"><Button>Blog</Button></LinkRouter> */}
+              {/* <LinkRouter to="/contato"><Button>Contato</Button></LinkRouter> */}
             </ButtonGroup>
           </Box>
 
