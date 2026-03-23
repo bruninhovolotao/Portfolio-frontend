@@ -13,11 +13,13 @@ import { AdicionarPortfolio } from '../painel/AdicionarPortfolio';
 import { PortfolioDetalhe } from '../pages/PortfolioDetalhe';
 import { PrivateRoutes } from "../routes/PrivateRoute";
 import { EditarPortfolio } from '../painel/EditarPortfolio';
+import { ScroollToTop } from '../components/ScroollToTop';
 
 export function AppRoutes(){
     return(
         
         <BrowserRouter>
+            <ScroollToTop/>
             <Routes>
                 <Route path='/' element={<Home/>} />
                 <Route path='/sobre' element={<Sobre/>} />
